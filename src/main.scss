@@ -1,0 +1,46 @@
+// Config and Base Style
+@import "utils/font";
+@import "utils/variable";
+@import "utils/mixin";
+@import "styles/global";
+
+// Icon and Typography
+@import "utils/icon";
+@import "utils/typography";
+
+// icon and typography media queryleri ezmek için
+@import "utils/mediaQuery";
+
+// Navigation
+@import "components/Navigation.scss";
+
+// Home Page Style
+@import "components/Header.scss";
+@import "styles/home.scss";
+@import "components/Hero.scss";
+
+// Overview Page Style
+@import "styles/overview.scss";
+
+// Banner Style
+@import "components/Banner.scss";
+
+// Comparable Page Style
+@import "styles/comparable.scss";
+
+// Marketing Page Style
+@import "styles/marketing.scss";
+
+// Questions Page Style
+@import "styles/question.scss";
+
+// Next Steps Page Style
+@import "styles/next-step.scss";
+
+// Footer Style
+@import "components/Footer.scss";
+
+// Components
+@import "components/FormModal.scss";
+@import "components/Buttons.scss";
+@import "components/Boxes.scss";

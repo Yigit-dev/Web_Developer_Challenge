@@ -1,0 +1,21 @@
+footer {
+  background-color: $raidenBlue;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  @include SpaceBetween;
+  padding: 4% 20% 3%;
+  border-top: 1px solid #2870b4;
+  flex-wrap: wrap;
+  @media screen and (max-width: $md) {
+    padding: 8% 5% 3%;
+  }
+  .box {
+    @include FlexStart;
+    margin: 20px;
+    .contact {
+      padding-left: 20px;
+      color: $white;
+    }
+  }
+}

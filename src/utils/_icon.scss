@@ -1,0 +1,105 @@
+.icon {
+  display: inline-block;
+  width: 1.35rem;
+  height: 1.35rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.icon-home {
+  background-image: url(./icons/Home.svg);
+}
+.icon-calender {
+  background-image: url(./icons/Calender.svg);
+}
+.icon-bedroom {
+  background-image: url(./icons/Bedroom.svg);
+}
+.icon-seat {
+  background-image: url(./icons/Seat.svg);
+}
+.icon-bathroom {
+  background-image: url(./icons/Bathroom.svg);
+}
+.icon-menu {
+  background-image: url(./icons/Menu.svg);
+}
+.icon-close {
+  background-image: url(./icons/Close.svg);
+}
+.icon-call {
+  background-image: url(./icons/Call.svg);
+}
+.icon-location {
+  background-image: url(./icons/Location.svg);
+}
+.icon-pen {
+  background-image: url(./icons/Pen.svg);
+}
+.icon-local {
+  background-image: url(./icons/Local.svg);
+}
+.icon-tag {
+  background-image: url(./icons/Tag.svg);
+}
+.icon-search {
+  background-image: url(./icons/Search.svg);
+}
+.icon-questionFill {
+  background-image: url(./icons/QuestionFill.svg);
+}
+.icon-locationFill {
+  background-image: url(./icons/LocationFill.svg);
+}
+.icon-eye {
+  background-image: url(./icons/Eye.svg);
+}
+.icon-file {
+  background-image: url(./icons/File.svg);
+}
+.icon-download {
+  background-image: url(./icons/Download.svg);
+}
+.icon-arrowLeft {
+  background-image: url(./icons/ArrowLeft.svg);
+}
+.icon-arrowRight {
+  background-image: url(./icons/ArrowRight.svg);
+}
+.icon-question {
+  background-image: url(./icons/Question.svg);
+}
+.icon-play {
+  background-image: url(./icons/Play.svg);
+}
+.icon-check {
+  background-image: url(./icons/Check.svg);
+}
+.icon-mail {
+  background-image: url(./icons/Mail.svg);
+}
+
+// -----Media Query Icon for Responsive-----
+@media screen and (min-width: $sm) {
+  .icon {
+    width: 1.35rem;
+    height: 1.35rem;
+  }
+}
+@media screen and (min-width: $md) {
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+@media screen and (min-width: $lg) {
+  .icon {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
+@media screen and (min-width: $xl) {
+  .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}

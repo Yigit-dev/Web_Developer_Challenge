@@ -1,0 +1,45 @@
+section.question {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10% 0 2%;
+  hr {
+    border-bottom: 1px solid $borderColor2;
+  }
+
+  .section-abstractTitle {
+    position: absolute;
+    width: 100%;
+    @include JustifyCenter;
+    z-index: 0;
+  }
+
+  .title {
+    padding: 0 15% 3.8%;
+    z-index: 1;
+  }
+  .col {
+    @include FlexStart;
+    padding: 3.8% 14%;
+    h3,
+    p {
+      padding-left: 18px;
+    }
+  }
+  .button-read-more {
+    @include FlexStart;
+    padding: 60px 14%;
+  }
+  @media screen and (max-width: $md) {
+    .col,
+    .title,
+    .button-read-more {
+      padding: 6% 5%;
+    }
+  }
+}

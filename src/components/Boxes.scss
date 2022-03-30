@@ -1,0 +1,40 @@
+.iconBox {
+  &.tag {
+    background-color: $raidenBlue;
+    min-width: 80px;
+    min-height: 80px;
+    border-radius: 100%;
+    @include JustifyCenter;
+    flex-shrink: 1;
+
+    @media screen and (max-width: $md) {
+      & {
+        min-width: 60px;
+        min-height: 60px;
+      }
+    }
+  }
+  &.number {
+    border: 2px solid $sectionTitle;
+    min-width: 80px;
+    min-height: 80px;
+    border-radius: 100%;
+    @include JustifyCenter;
+    flex-shrink: 1;
+    h2 {
+      color: $sectionTitle;
+    }
+    &:hover {
+      & {
+        background-color: $optionBoxColor;
+        border: 0;
+      }
+    }
+    @media screen and (max-width: $md) {
+      & {
+        min-width: 42px;
+        min-height: 42px;
+      }
+    }
+  }
+}

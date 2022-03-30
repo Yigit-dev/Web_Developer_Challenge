@@ -1,0 +1,99 @@
+section.comparable {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15vh 2vh;
+  margin: 0 auto;
+
+  .abstract-image {
+    width: 100%;
+    height: 1080px;
+    position: absolute;
+    top: -610px;
+    left: 0;
+    background-position: 50% 50%;
+    background-size: cover;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .comparable-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    background-size: cover;
+    object-fit: cover;
+    padding-bottom: 20px;
+  }
+  .body {
+    height: 12vw;
+    @media screen and (max-width: $md) {
+      &{
+        height: 12rem;
+      }
+    }
+  }
+
+  .pdf-box {
+    background-color: #dddddd;
+    padding: 20px 26px;
+    border-radius: 9px;
+    @include SpaceBetween;
+    .doc {
+      display: flex;
+      align-items: center;
+      .box {
+        background-color: $white;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        @include JustifyCenter;
+      }
+      p {
+        margin-left: 20px;
+      }
+    }
+
+    .box-download {
+      background-color: $thimbleBerry;
+      border-radius: 100%;
+      width: 30px;
+      height: 30px;
+      @include JustifyCenter;
+    }
+  }
+
+  .price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-text {
+      padding-bottom: 24px;
+    }
+    a{
+      color: #0050BE;      
+    }
+  }
+  @media screen and (max-width: $md) {
+    .price {
+      padding-bottom: 43px;
+    }
+  }
+
+  .button {
+    button.read-more {
+      @include JustifyCenter;
+      border: 2px solid $borderColor;
+      padding: 12px 20px;
+      border-radius: 34px;
+      background-color: transparent;
+      p {
+        padding-right: 10px;
+      }
+    }
+  }
+}

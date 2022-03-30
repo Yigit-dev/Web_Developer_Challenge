@@ -1,0 +1,109 @@
+.feedback-modal {
+  width: 100%;
+  max-width: 600px;
+  max-height: 100%;
+  background: #fff;
+  border-radius: 12px;
+  padding: 47px 24px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: 300ms linear all;
+  box-shadow: 0 37px 40px 0 rgba(#385298, 0.18);
+  z-index: 999;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .modal-header {
+    @include SpaceBetween;
+    padding-bottom: 27px;
+    h3 {
+      font-size: 26px;
+    }
+    .modal-close-btn {
+      background: #eaedf5;
+      width: 32px;
+      height: 32px;
+      // padding: 5px;
+      border-radius: 100%;
+      @include JustifyCenter;
+    }
+  }
+
+  .modal-body {
+    ul {
+      li {
+        padding-bottom: 20px;
+        p {
+          font-size: 16px;
+          padding-bottom: 10px;
+          span {
+            color: red;
+          }
+        }
+        input {
+          width: 100%;
+          height: 36px;
+          border-radius: 6px;
+          border: 1px solid $borderColor;
+          padding: 0 19px;
+          font-size: 16px;
+          transition: 300ms border-color;
+
+          &:focus {
+            border-color: $gray;
+            caret-color: $gray;
+          }
+
+          &::placeholder {
+            color: #b4b4b4;
+          }
+        }
+        textarea {
+          height: 150px;
+          border-radius: 5px;
+          border: 1px solid $borderColor;
+          width: 100%;
+          resize: none;
+          padding: 20px;
+          font-size: 16px;
+
+          &:focus {
+            border-color: #3b70ff;
+          }
+        }
+      }
+    }
+  }
+
+  .modal-footer {
+    input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+    }
+    label {
+      display: block;
+      padding-bottom: 16px;
+    }
+    .actions {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      button.button-modal {
+        cursor: pointer;
+        background-color: transparent;
+        border: 1px solid $borderColor;
+        margin: 10px;
+        border-radius: 34px;
+      }
+    }
+  }
+}

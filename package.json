@@ -1,0 +1,20 @@
+{
+  "name": "ui_developer_challenge",
+  "version": "1.0.0",
+  "description": "",
+  "source": "dist/index.html",
+  "scripts": {
+    "start": "parcel --no-cache src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.4.0",
+    "@parcel/transformer-sass": "^2.4.0",
+    "posthtml-doctype": "^1.1.1",
+    "posthtml-include": "^1.7.2"
+  }
+}

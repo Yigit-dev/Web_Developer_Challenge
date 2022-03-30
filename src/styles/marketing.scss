@@ -1,0 +1,85 @@
+section.marketing {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: $backgroundColor2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15vh 2vh 0;
+  margin: 0 auto;
+
+  .body {
+    height: 25rem;
+  }
+
+  .marketingCard {
+    padding: 30px 18px;
+    background-color: rgba(#c7c7c7, 0.09);
+    border-radius: 10px;
+
+    .card {
+      background-color: $white;
+      border-radius: 10px;
+      border: 2px solid $white;
+      padding: 34px 39px;
+      display: flex;
+      align-items: center;
+      transition: 300ms all;
+      &:not(:first-child, :last-child) {
+        margin: 28px 0;
+      }
+      &:hover {
+        &{
+          transition: 300ms all;
+          background-color: $raidenBlue;
+        }
+        .iconBox {
+          background-color: $white;
+          .icon {
+            filter: brightness(0) saturate(100%) invert(21%) sepia(54%)
+              saturate(3245%) hue-rotate(195deg) brightness(93%) contrast(101%);
+          }
+        }
+        .price p {
+          color: $white;
+        }
+      }
+      .price {
+        padding-left: 18px;
+        p {
+          margin: 12px 0;
+        }
+      }
+    }
+  }
+
+  .banner-section {
+    position: relative;
+    width: 100%;
+    .abstract-image {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: -45%;
+      background-size: cover;
+      object-fit: cover;
+      z-index: 0;
+    }
+    .banner {
+      position: relative;
+      z-index: 1;
+      img {
+        width: 100%;
+        padding: 10% 12%;
+        background-size: contain;
+        object-fit: contain;
+        z-index: 1;
+        @media screen and (max-width: $md) {
+          padding: 10% 0;
+        }
+      }
+    }
+  }
+}

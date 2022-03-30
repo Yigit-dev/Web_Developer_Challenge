@@ -1,0 +1,126 @@
+  .container {
+    height: 88vh;
+    @include JustifyCenter;
+    padding: 0vh 27vh;
+    @media screen and (max-width: $xl) {      
+      &{
+        display: block;
+        padding: 10vh;
+      }
+    }
+   
+    @media screen and (max-width: $md) {      
+      &{
+        display: block;
+        padding: 5vh;
+      }
+    }
+    .contact {
+      cursor: pointer;
+      border: 2px solid $gray;
+      border-radius: 34px;
+      display: flex;
+      align-items: center;
+      button {
+        cursor: pointer;
+        background-color: $raidenBlue;
+        padding: 14px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      p {
+        padding: 12px 10px;
+      }
+      transition: 400ms all;
+      &:hover {
+        transition: 400ms all;
+        background-color: $raidenBlue;
+        p {
+          color: $white;
+        }
+      }
+    }
+
+    .hero {
+      h1 {
+        margin-left: 10px;
+        padding-bottom: 45px;
+      }
+      .head {
+        display: flex;
+        align-items: center;
+        padding-bottom: 4.5%;
+
+        hr {
+          width: 90%;
+          border: 1px dashed $gray;
+        }
+      }
+    }
+
+    .optionBoxContainer{
+      padding-left: 70px;
+      @media screen and (max-width: $md) {
+        padding: 2vh 3vh;
+      }
+      
+      .optionBox {
+        background-color: $optionBoxColor;
+        border-radius: 11px;
+        .col{
+          position: relative;
+        }
+        .option {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 2vw;
+          transition: 200ms all;
+          width: 100%;
+          .icon {
+            margin: 15px 0;
+          }
+          h5 {
+            margin-bottom: 15px;
+          }
+  
+          &.line {
+            border-right: 1px dashed $gray;
+          }
+          &.lineHorizontal {
+            border-bottom: 1px dashed $gray;
+          }
+  
+          &:hover {
+            border-radius: 11px;
+            background-color: $raidenBlue;
+            transition: 200ms;
+            h6,
+            h5 {
+              color: $white;
+            }
+            .icon {
+              filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7487%) hue-rotate(149deg) brightness(103%) contrast(103%);
+            }
+            &.left-hover{
+              position: absolute;
+              top: -17px;
+              left: -23px;
+            }
+            &.right-hover{
+              position: absolute;
+              top: -17px;
+              right: -23px;
+            }
+          }
+        }
+      }
+    }
+
+    button.details {
+      background-color: transparent;
+    }
+  }

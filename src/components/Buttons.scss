@@ -1,0 +1,111 @@
+.button {
+  &-phone{
+    background-color: $raidenBlue;
+    @include JustifyCenter;
+    border-radius: 100%;
+    padding: 10px;
+  }
+  &-slider {
+    @include JustifyCenter;
+    button {
+      background-color: transparent;
+      border: 1px solid $gray;
+      width: 85px;
+      height: 85px;
+      margin: 0 10px;
+      @include JustifyCenter;
+      border-radius: 100%;
+      transition: 300ms all;
+
+      &:hover {
+        transition: 300ms all;
+        background-color: $raidenBlue;
+        .icon {
+          filter: invert(96%) sepia(0%) saturate(16%) hue-rotate(306deg)
+            brightness(103%) contrast(107%);
+        }
+      }
+    }
+  }
+  &-read-more {
+    button {
+      @include JustifyCenter;
+      border: 2px solid $borderColor;
+      padding: 12px 20px;
+      border-radius: 34px;
+      background-color: transparent;
+      p {
+        padding-right: 10px;
+      }
+    }
+    @media screen and (max-width: $md) {
+      & {
+        @include JustifyCenter;
+      }
+    }
+  }
+  .play-button {
+    @include JustifyCenter;
+    background-color: transparent;
+  }
+  &-standart {
+    button {
+      background-color: $white;
+      padding: 12px 20px;
+      border-radius: 60px;
+    }
+  }
+  &-proceed {
+    
+    button.show-modal {
+      cursor: pointer;
+      @include SpaceBetween;
+      padding: 20px 40px;
+      border-radius: 60px;
+      background-color: $white;
+      .icon {
+        margin-right: 15px;
+      }
+      p {
+        color: #000;
+      }
+
+      &:hover{
+        background-color: #6FEE8D;
+        transition: 400ms all;
+        .icon{
+          transition: 300ms all;
+          margin: 0;
+          width: 2.3rem;
+          height: 2.3rem;
+          filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7487%) hue-rotate(149deg) brightness(103%) contrast(103%);
+        }
+        p{
+          display: none;
+        }
+      }
+    }
+  }
+  &-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    button {
+      margin: 10px;
+      background-color: transparent;
+      border: 1px solid $borderColor;
+      padding: 12px 33px;
+      border-radius: 34px;
+      &:last-child {
+        background-color: $raidenBlue;
+        p {
+          color: $white;
+        }
+      }
+      p {
+        color: $gray;
+      }
+    }
+  }
+}

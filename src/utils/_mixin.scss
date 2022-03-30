@@ -1,0 +1,15 @@
+@mixin JustifyCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin SpaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin FlexStart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

@@ -1,0 +1,400 @@
+h4 {
+  font-family: Rubik Light;
+}
+// fixed size
+h6 {
+  font-size: 1rem;
+  font-family: Rubik Regular;
+}
+
+p {
+  font-size: 1rem;
+}
+.standartButton {
+  font-family: Rubik Regular;
+  font-size: 24px;
+}
+.section {
+  &-title {
+    font-family: Rubik Regular;
+    color: $sectionTitle;
+    &-small {
+      font-family: Rubik Regular;
+      color: $sectionTitle;
+    }
+  }
+  &-subTitle {
+    font-family: Rubik Regular;
+    color: $sectionSubTitle;
+    &-small {
+      font-family: Rubik Regular;
+      color: $sectionSubTitle;
+    }
+  }
+  &-homeTitle {
+    font-family: Rubik Bold;
+    color: $textColor;
+  }
+  &-abstractTitle {
+    color: $abstractText;
+    font-family: Rubik Medium;
+  }
+}
+.question {
+  &-ask {
+    font-family: Rubik Regular;
+    color: $boldColor;
+  }
+  &-answer {
+    font-family: Rubik Regular;
+    color: $sectionSubTitle;
+  }
+}
+.price {
+  &-text {
+    font-family: Rubik Medium;
+    color: #000;
+  }
+  &-marketing {
+    font-family: Rubik Regular;
+    color: $sectionSubTitle;
+  }
+}
+.optionBox {
+  &-textSmall {
+    font-family: Rubik Regular;
+    font-size: 1rem;
+  }
+  &-text {
+    font-family: Rubik Medium;
+  }
+}
+footer {
+  .contact {
+    &-title {
+      font-family: Rubik Medium;
+      color: $white;
+      font-size: 1rem;
+    }
+    &-text {
+      font-family: Rubik Regular;
+      color: $white;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+// -----Media Query for Typography-----
+@media screen and (min-width: 0) {
+  .section {
+    &-title {
+      font-size: 2.5rem;
+      &-small {
+        font-size: 2.4rem;
+      }
+    }
+    &-subTitle {
+      font-size: 1rem;
+      &-small {
+        font-size: 1.1rem;
+      }
+    }
+    &-homeTitle {
+      font-size: 1.5rem;
+    }
+    &-abstractTitle {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+  }
+  .optionBox {
+    &-textSmall {
+      font-size: 0.8rem;
+    }
+    &-text {
+      font-size: 1rem;
+    }
+  }
+  .button {
+    &-text {
+      font-size: 1rem;
+    }
+    &-text-small {
+      font-size: 0.65rem;
+    }
+  }
+  .price {
+    &-text {
+      font-family: Rubik Medium;
+      color: #000;
+      font-size: 1.5rem;
+    }
+    &-marketing {
+      font-family: Rubik Regular;
+      color: $sectionSubTitle;
+      font-size: 1.3rem;
+    }
+  }
+  .question {
+    &-ask {
+      font-size: 1.2rem;
+    }
+    &-answer {
+      font-size: 1.1rem;
+    }
+  }
+}
+@media screen and (min-width: $sm) {
+  .section {
+    &-title {
+      font-size: 2.8rem;
+      &-small {
+        font-size: 2.5rem;
+      }
+    }
+    &-subTitle {
+      font-size: 1.2rem;
+      &-small {
+        font-size: 1.125rem;
+      }
+    }
+    &-homeTitle {
+      font-size: 1.75rem;
+    }
+    &-abstractTitle {
+      h1 {
+        font-size: 7.5rem;
+      }
+    }
+  }
+  .optionBox {
+    &-textSmall {
+      font-size: 0.9rem;
+    }
+    &-text {
+      font-size: 1.1rem;
+    }
+  }
+  .button {
+    &-text-small {
+      font-size: 0.7rem;
+    }
+  }
+  .price {
+    &-text {
+      font-family: Rubik Medium;
+      color: #000;
+      font-size: 1.5rem;
+    }
+    &-marketing {
+      font-family: Rubik Regular;
+      color: $sectionSubTitle;
+      font-size: 1.3rem;
+    }
+  }
+}
+@media screen and (min-width: $md) {
+  .section {
+    &-title {
+      font-size: 3rem;
+      &-small {
+        font-size: 2.8rem;
+      }
+    }
+    &-subTitle {
+      font-size: 1.3rem;
+      &-small {
+        font-size: 1.25rem;
+      }
+    }
+    &-homeTitle {
+      font-size: 2.1rem;
+    }
+    &-abstractTitle {
+      h1 {
+        font-size: 9rem;
+      }
+    }
+  }
+  .button {
+    &-text {
+      font-size: 1.06rem;
+    }
+  }
+  .optionBox {
+    &-textSmall {
+      font-size: 1.2rem;
+    }
+    &-text {
+      font-size: 1.2rem;
+    }
+  }
+  .price {
+    &-text {
+      font-family: Rubik Medium;
+      color: #000;
+      font-size: 1.6rem;
+    }
+    &-marketing {
+      font-family: Rubik Regular;
+      color: $sectionSubTitle;
+      font-size: 1.4rem;
+    }
+  }
+  .question {
+    &-ask {
+      font-size: 1.5rem;
+    }
+    &-answer {
+      font-size: 1.25rem;
+    }
+  }
+}
+@media screen and (min-width: $lg) {
+  .section {
+    &-title {
+      font-size: 3.5rem;
+      &-small {
+        font-size: 3rem;
+      }
+    }
+    &-subTitle {
+      font-size: 1.4rem;
+      &-small {
+        font-size: 1.25rem;
+      }
+    }
+    &-homeTitle {
+      font-size: 2.6rem;
+    }
+    &-abstractTitle {
+      h1 {
+        font-size: 9rem;
+      }
+    }
+  }
+  .optionBox {
+    &-textSmall {
+      font-size: 1.2rem;
+    }
+    &-text {
+      font-size: 1.4rem;
+    }
+  }
+  .button {
+    &-text-small {
+      font-size: 0.8rem;
+    }
+  }
+  .price {
+    &-text {
+      font-family: Rubik Medium;
+      color: #000;
+      font-size: 1.7rem;
+    }
+    &-marketing {
+      font-family: Rubik Regular;
+      color: $sectionSubTitle;
+      font-size: 1.5rem;
+    }
+  }
+}
+@media screen and (min-width: $xl) {
+  .section {
+    &-title {
+      font-size: 4rem;
+      &-small {
+        font-size: 3.125rem;
+      }
+    }
+    &-subTitle {
+      font-size: 1.5rem;
+      &-small {
+        font-size: 1.25rem;
+      }
+    }
+    &-homeTitle {
+      font-size: 3.25rem;
+    }
+    &-abstractTitle {
+      h1 {
+        font-size: 12rem;
+      }
+    }
+  }
+  .optionBox {
+    &-text {
+      font-size: 1.5rem;
+    }
+  }
+  .price {
+    &-text {
+      font-family: Rubik Medium;
+      color: #000;
+      font-size: 1.875rem;
+    }
+    &-marketing {
+      font-family: Rubik Regular;
+      color: $sectionSubTitle;
+      font-size: 1.625rem;
+    }
+  }
+  .standartButton {
+    font-size: 1.5rem;
+  }
+}
+
+// Text Special Style
+.ghostText {
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    background: rgba(255, 255, 255, 0);
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(255, 255, 255, 0)),
+      color-stop(0%, rgba(255, 255, 255, 0)),
+      color-stop(30%, rgba(255, 255, 255, 0.8)),
+      color-stop(80%, white)
+    );
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.8) 30%,
+      white 80%
+    );
+  }
+
+  &.background {
+    &::after {
+      background: rgba(255, 255, 255, 0);
+      background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(255, 255, 255, 0)),
+        color-stop(0%, rgba(255, 255, 255, 0)),
+        color-stop(30%, rgba($backgroundColor2, 0.8)),
+        color-stop(80%, $backgroundColor2)
+      );
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 0%,
+        rgba($backgroundColor2, 0.8) 30%,
+        $backgroundColor2 80%
+      );
+    }
+  }
+}
