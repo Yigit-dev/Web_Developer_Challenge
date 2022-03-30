@@ -1,10 +1,10 @@
+/* 
+  * style of contact button from components/Buttons.scss
+*/
 header {
   height: 8vh;
   @include SpaceBetween;
   padding: 4vh 15vh;
-  @media screen and (max-width: $xl) {      
-    // padding: 4vh 0vh;
-  }    
   @media screen and (max-width: $md) {      
     padding: 4vh 5vh;
   }    

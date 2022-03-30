@@ -8,8 +8,13 @@
 @import "utils/icon";
 @import "utils/typography";
 
-// icon and typography media queryleri ezmek için
+// icon and typography special media query
 @import "utils/mediaQuery";
+
+// Components
+@import "components/FormModal.scss";
+@import "components/Buttons.scss";
+@import "components/Boxes.scss";
 
 // Navigation
 @import "components/Navigation.scss";
@@ -39,8 +44,3 @@
 
 // Footer Style
 @import "components/Footer.scss";
-
-// Components
-@import "components/FormModal.scss";
-@import "components/Buttons.scss";
-@import "components/Boxes.scss";
