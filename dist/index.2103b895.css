@@ -958,6 +958,7 @@ header .menu {
   position: absolute;
   top: 0;
   left: 0;
+  overflow: scroll;
 }
 
 header .menu .close-menu {
@@ -1006,8 +1007,14 @@ header .nav ul li a {
   align-items: center;
   padding: 10px 30px;
   font-family: Rubik Light;
-  font-size: 2rem;
+  font-size: 1.8rem;
   display: flex;
+}
+
+@media screen and (max-width: 760px) {
+  header .nav ul li a {
+    font-size: 1.2rem;
+  }
 }
 
 header .contact {
