@@ -1,12 +1,10 @@
 // Config and Base Style
 @import "utils/font";
 @import "utils/variable";
+@import "utils/typography";
 @import "utils/mixin";
 @import "styles/global";
-
-// Icon and Typography
 @import "utils/icon";
-@import "utils/typography";
 
 // icon and typography special media query
 @import "utils/mediaQuery";

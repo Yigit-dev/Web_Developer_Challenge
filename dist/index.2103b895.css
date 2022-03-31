@@ -22,167 +22,6 @@
   font-display: swap;
 }
 
-* {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  border: none;
-  outline: none;
-  margin: 0;
-  padding: 0;
-  font-family: Rubik Regular;
-  text-decoration: none;
-  list-style: none;
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-:focus {
-  outline: none;
-}
-
-* body.blur {
-  filter: blur(2px);
-  z-index: 0;
-}
-
-* a {
-  color: #000;
-}
-
-.icon {
-  width: 1.35rem;
-  height: 1.35rem;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
-}
-
-.icon-home {
-  background-image: url("Home.d4eab672.svg");
-}
-
-.icon-calender {
-  background-image: url("Calender.a2a44e8a.svg");
-}
-
-.icon-bedroom {
-  background-image: url("Bedroom.5453df4a.svg");
-}
-
-.icon-seat {
-  background-image: url("Seat.67907f67.svg");
-}
-
-.icon-bathroom {
-  background-image: url("Bathroom.38c91154.svg");
-}
-
-.icon-menu {
-  background-image: url("Menu.44d40255.svg");
-}
-
-.icon-close {
-  background-image: url("Close.9f048d43.svg");
-}
-
-.icon-call {
-  background-image: url("Call.5adbca95.svg");
-}
-
-.icon-location {
-  background-image: url("Location.7ef38a6b.svg");
-}
-
-.icon-pen {
-  background-image: url("Pen.d0d84e26.svg");
-}
-
-.icon-local {
-  background-image: url("Local.d371f4dd.svg");
-}
-
-.icon-tag {
-  background-image: url("Tag.04c220b5.svg");
-}
-
-.icon-search {
-  background-image: url("Search.eadbfd13.svg");
-}
-
-.icon-questionFill {
-  background-image: url("QuestionFill.d0027aac.svg");
-}
-
-.icon-locationFill {
-  background-image: url("LocationFill.13582976.svg");
-}
-
-.icon-eye {
-  background-image: url("Eye.16afb172.svg");
-}
-
-.icon-file {
-  background-image: url("File.f328565c.svg");
-}
-
-.icon-download {
-  background-image: url("Download.d5f1d341.svg");
-}
-
-.icon-arrowLeft {
-  background-image: url("ArrowLeft.3734998d.svg");
-}
-
-.icon-arrowRight {
-  background-image: url("ArrowRight.be7bafd9.svg");
-}
-
-.icon-question {
-  background-image: url("Question.a27b6530.svg");
-}
-
-.icon-play {
-  background-image: url("Play.858b2e9b.svg");
-}
-
-.icon-check {
-  background-image: url("Check.68eea94e.svg");
-}
-
-.icon-mail {
-  background-image: url("Mail.ff13de71.svg");
-}
-
-@media screen and (min-width: 760px) {
-  .icon {
-    width: 1.35rem;
-    height: 1.35rem;
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .icon {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .icon {
-    width: 1.75rem;
-    height: 1.75rem;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .icon {
-    width: 2rem;
-    height: 2rem;
-  }
-}
-
 h4 {
   font-family: Rubik Light;
 }
@@ -537,6 +376,167 @@ footer .contact-text {
 
 .ghostText.background:after {
   background: linear-gradient(#fff0 0% 0%, #f4f7facc 30%, #f4f7fa 80%);
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  font-family: Rubik Regular;
+  text-decoration: none;
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+:focus {
+  outline: none;
+}
+
+* body.blur {
+  filter: blur(2px);
+  z-index: 0;
+}
+
+* a {
+  color: #000;
+}
+
+.icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.icon-home {
+  background-image: url("Home.d4eab672.svg");
+}
+
+.icon-calender {
+  background-image: url("Calender.a2a44e8a.svg");
+}
+
+.icon-bedroom {
+  background-image: url("Bedroom.5453df4a.svg");
+}
+
+.icon-seat {
+  background-image: url("Seat.67907f67.svg");
+}
+
+.icon-bathroom {
+  background-image: url("Bathroom.38c91154.svg");
+}
+
+.icon-menu {
+  background-image: url("Menu.44d40255.svg");
+}
+
+.icon-close {
+  background-image: url("Close.9f048d43.svg");
+}
+
+.icon-call {
+  background-image: url("Call.5adbca95.svg");
+}
+
+.icon-location {
+  background-image: url("Location.7ef38a6b.svg");
+}
+
+.icon-pen {
+  background-image: url("Pen.d0d84e26.svg");
+}
+
+.icon-local {
+  background-image: url("Local.d371f4dd.svg");
+}
+
+.icon-tag {
+  background-image: url("Tag.04c220b5.svg");
+}
+
+.icon-search {
+  background-image: url("Search.eadbfd13.svg");
+}
+
+.icon-questionFill {
+  background-image: url("QuestionFill.d0027aac.svg");
+}
+
+.icon-locationFill {
+  background-image: url("LocationFill.13582976.svg");
+}
+
+.icon-eye {
+  background-image: url("Eye.16afb172.svg");
+}
+
+.icon-file {
+  background-image: url("File.f328565c.svg");
+}
+
+.icon-download {
+  background-image: url("Download.d5f1d341.svg");
+}
+
+.icon-arrowLeft {
+  background-image: url("ArrowLeft.3734998d.svg");
+}
+
+.icon-arrowRight {
+  background-image: url("ArrowRight.be7bafd9.svg");
+}
+
+.icon-question {
+  background-image: url("Question.a27b6530.svg");
+}
+
+.icon-play {
+  background-image: url("Play.858b2e9b.svg");
+}
+
+.icon-check {
+  background-image: url("Check.68eea94e.svg");
+}
+
+.icon-mail {
+  background-image: url("Mail.ff13de71.svg");
+}
+
+@media screen and (min-width: 760px) {
+  .icon {
+    width: 1.35rem;
+    height: 1.35rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .icon {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .icon {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 @media screen and (min-width: 0) {
